@@ -1,0 +1,79 @@
+
+body {
+    background-color: black;
+}
+
+
+
+#container {
+    /*border: thin solid;*/
+    width: 600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding-top: 0px;
+}
+
+#interaction {
+    border: thin solid;
+    background-image: url(http://127.0.0.1:8000/static/img/bckgnd.jpg);
+
+}
+
+
+#com {
+    /*border: thin solid;*/
+}
+
+#com div {
+    /*border: thin solid;*/
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 4px;
+    /*padding-bottom: 4px;
+    padding: 1px 2px 1px 2px;*/
+    margin: 5px 10px 5px 10px;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    height: 22px;
+}
+
+.white {
+    color: white!important;
+}
+.red {
+    color: red!important;
+}
+.yellow {
+    color: yellow!important;
+}
+
+#userinput {
+    /*border: thin solid;*/
+    padding-left: 10px;
+    /*padding: 1px 2px 1px 2px;
+    margin: 5px 10px 5px 10px;*/
+    padding-top: 3px;
+    height: 30px;
+}
+
+#com input[type="text"], #textinput input[type="text"]
+{
+    background: transparent;
+    border: none;
+}
+
+#textinput {
+    font-weight: bold;
+    font-family: Monospace;
+    font-size: 14px;  
+    color: white;
+    padding-left: 4px;
+    line-height: 24px;
+    height: 24px;
+    background-color: green;
+    opacity: 0.5;
+}

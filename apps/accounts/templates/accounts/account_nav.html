@@ -1,0 +1,21 @@
+
+
+<div id="account-nav" style="display:block;height: 20px;">
+
+  {% if request.user.is_authenticated %}
+    <div>
+      <label for="auth-uname" style="float:left;">User:</label>
+      <div id="auth-uname" style="float:left;margin-left: 8px;">
+        {{ request.user.username }} (<a href="{% url 'logout' %}">Logout</a>{% if request.user.is_superuser %} | <a href="/admin/">Admin</a>{% endif %})
+      </div>
+    </div>
+
+  {% else %}
+    <div>
+      <a href="{% url 'login' %}">Login</a> |
+      <a href="{% url 'register' %}">Register Here</a>
+    </div>
+
+  {% endif %}
+
+</div>

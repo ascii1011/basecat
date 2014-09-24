@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id="left-bar" class="left-aligned">
+
+  {% if projects %}
+  <div style="font-size:24px;">Project:</div>
+  <ul>
+    {% if request.user.is_authenticated %}
+    {% for p in projects %}
+    <li>
+      <div><a href="{% url 'project-dashboard' pk=p.0%}">{{ p.1 }}</a></div>
+    </li>
+    {% endfor %}
+    {% endif %}
+  </ul>
+  {% endif %}
+
+</div>
+
+{% endblock %}
+
+

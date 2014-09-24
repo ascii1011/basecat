@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div id="container" style="padding:4px; spacing:4px;">      
+  <div id="interaction">               
+    {% csrf_token %}
+    <div id="com"></div>
+    <div id="userinput">
+      <input type="text" style="width: 570px;" id="textinput" maxlength="40" name="uinput" value="" >
+    </div>       
+  </div>      
+</div>
+{% endblock %}

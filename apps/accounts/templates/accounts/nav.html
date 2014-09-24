@@ -1,0 +1,13 @@
+
+{% if request.user.is_authenticated %}
+<div style="color: white;">User: {{ request.user.username }}</div>
+<a href="{% url 'logout' %}">Logout</a>
+
+{% if request.user.is_superuser %}
+<a href="{% url 'admin' %}">Admin</a>
+{% endif %}
+
+{% else %}
+<a href="{% url 'login' %}">Login</a>
+<a href="{% url 'register' %}">Register Here</a>
+{% endif %}

@@ -1,0 +1,37 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    
+    <title>Catacombs</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' href='{{ STATIC_URL }}css/base.css' />
+    <script type='text/javascript' src="{{ STATIC_URL }}js/jquery-1.11.1.js"></script>
+    
+  </head>
+  <body>
+    
+    <div id="container">      
+      <div id="interaction">               
+          {% csrf_token %}
+        <div id="com"></div>
+        <div id="userinput">
+          <input type="text" style="width: 570px;" id="textinput" maxlength="40" name="uinput" value="" >
+        </div>       
+      </div>      
+    </div>
+        
+    <script type='text/javascript' src="{{ STATIC_URL }}js/tools.js"></script>
+    <script type='text/javascript' src="{{ STATIC_URL }}js/bootstrapon.js"></script>
+
+  </body>
+</html>
+
+
