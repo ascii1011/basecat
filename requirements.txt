@@ -1,0 +1,50 @@
+Django==1.4.1
+Pillow==2.1.0
+South==0.8.1
+Whoosh==2.4.0
+amqp==1.0.13
+-e git+https://github.com/segmentio/analytics-python.git@39803bb48f9bcb2843727c193f01739ecb298947#egg=analytics_python-dev
+-e git+https://github.com/yourguru/django-geocodemonkey.git#egg=django-geocodemonkey
+django-easy-maps
+geopy >= 0.96
+anyjson==0.3.3
+balanced==0.11.15
+billiard==2.7.3.33
+celery==3.0.23
+certifi==0.0.8
+chardet==1.0.1
+customerio==0.1.3
+django-balanced==0.1.9
+django-celery==3.0.23
+django-countries==1.5
+django-debug-toolbar==0.9.4
+django-haystack==2.0.0
+django-json-field==0.5.5
+django-loginurl==0.2
+django-social-auth
+django-vanilla-views==1.0.2
+django-wysiwyg==0.5.1
+django-widget-tweaks==1.3
+easy-thumbnails==1.3
+flower==0.5.2
+httplib2==0.8
+iso8601==0.1.4
+kombu==2.5.15
+mock==0.8.0
+oauth2==1.5.211
+psycopg2==2.5.1
+pyelasticsearch==0.6.1
+python-dateutil==2.1
+python-google-places==0.10.1
+python-yelp==0.1.1
+pytz==2013b
+redis==2.8.0
+requests==1.2.3
+sierra-django-json-mixin-form==1.1
+simplejson==2.3.2
+six==1.3.0
+tornado==3.1.1
+urllib3==1.7.1
+vobject==0.8.1c
+#wadofstuff-django-serializers Use easy_install
+wsgiref==0.1.2
